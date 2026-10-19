@@ -1,0 +1,1307 @@
+<!DOCTYPE html><html lang="en" style=""><head></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>
+@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+::-webkit-scrollbar{display:none;}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.975);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.24s forwards;
+  opacity: 0;
+}
+
+.animate-reveal-image {
+  animation: fadeInScale 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up, .animate-fade-up-delay-1, .animate-fade-up-delay-2, .animate-reveal-image {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-low":"#f8f3eb","inverse-on-surface":"#f5f0e8","tertiary-container":"#2d1600","on-tertiary":"#ffffff","on-primary":"#ffffff","surface-container-high":"#ece8e0","surface-dim":"#ded9d2","primary-container":"#1d1b19","secondary-fixed-dim":"#e8bdae","on-error":"#ffffff","primary-fixed":"#e8e1dd","inverse-primary":"#cbc5c2","surface":"#fef9f1","on-surface-variant":"#4c4640","background":"#fef9f1","inverse-surface":"#32302b","error":"#ba1a1a","surface-variant":"#e7e2da","primary":"#151311","on-primary-container":"#878380","on-primary-fixed":"#1d1b19","surface-tint":"#615e5b","on-background":"#151311","on-tertiary-fixed-variant":"#61401f","error-container":"#ffdad6","outline":"#7d766f","on-secondary-fixed":"#2d150d","secondary-fixed":"#ffdbcf","tertiary-fixed":"#ffdcbf","surface-container":"#f2ede5","secondary-container":"#fdd0c1","on-secondary-fixed-variant":"#5e3f35","outline-variant":"#cec5bd","on-tertiary-container":"#a57c56","surface-container-highest":"#e7e2da","on-surface":"#151311","primary-fixed-dim":"#cbc5c2","tertiary-fixed-dim":"#edbd93","surface-container-lowest":"#ffffff","on-secondary-container":"#79574c","on-secondary":"#ffffff","on-error-container":"#93000a","surface-bright":"#fef9f1","tertiary":"#000000","secondary":"#4a2e24","brand-bronze":"#a47b55","brand-espresso":"#4a2e24","on-tertiary-fixed":"#2d1600","on-primary-fixed-variant":"#494644"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-tablet":"3rem","space-sm":"0.75rem","space-lg":"2.25rem","space-xl":"4rem","margin-mobile":"1.25rem","gutter-desktop":"2.5rem","gutter":"1.5rem","margin-desktop":"5rem","margin":"1.5rem","gutter-mobile":"1rem","space-xs":"0.375rem","space-md":"1.25rem"},"fontFamily":{"body-md":["DM Sans"],"display-hero-mobile":["Instrument Serif"],"label-uppercase":["DM Sans"],"data-metric":["DM Sans"],"headline-lg":["Instrument Serif"],"title-editorial":["Instrument Serif"],"body-lg":["DM Sans"],"headline-sm":["Instrument Serif"],"display-hero":["Instrument Serif"],"headline-md":["Instrument Serif"],"body-sm":["DM Sans"],"label-ui":["DM Sans"],"headline-md-mobile":["Instrument Serif"],"headline-lg-mobile":["Instrument Serif"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["44px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-uppercase":["11px",{"lineHeight":"16px","letterSpacing":"0.14em","fontWeight":"600"}],"data-metric":["38px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.015em","fontWeight":"400"}],"title-editorial":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["26px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-ui":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script><header class="fixed top-0 left-0 w-full z-50 bg-[#fef9f1]/90 backdrop-blur-md border-b border-outline-variant/40"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between py-2"><a class="flex flex-col group py-1" data-path="home" href="#"><img alt="Upvert Media" class="h-16 sm:h-20 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8g_MdOoGUyqPkvFlXFq3PZ9UDiFa5q4N5V8DfVqzwr-fBvGcyKNlAPkNT3who0foyIMed1L_vJgZ1zy2iJm0D6MpVsXomHXTw4rJaGlFa1qKJnOHp6DpjzpBwoTsh7djYx-p2gCWC5yk69HuXm3biI5ayTuSMX0b0cKhE3Ft3QyUsRkUoXNTqMNuC1lmITfHi8WUHBogRQyoZpRO0XpNq2b01Cu1xszsSiFx-RV97zV2ON7Uw80C_J2eDeAxZmqU2Ow"></a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-on-surface font-medium border-b border-primary"><a aria-current="page" class="relative font-label-ui text-label-ui text-on-surface font-medium py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1.5px] after:bg-[#a47b55] transition-colors" data-path="home" href="#">Home</a><a class="relative font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors py-1 group" data-path="our-system" href="#our-system">Our System<span class="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#a47b55] transition-all duration-300 group-hover:w-full"></span></a><a class="relative font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors py-1 group" data-path="results" href="#performance-section">Results<span class="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#a47b55] transition-all duration-300 group-hover:w-full"></span></a><a class="relative font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors py-1 group" data-path="about" href="#">About<span class="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#a47b55] transition-all duration-300 group-hover:w-full"></span></a><a class="relative font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors py-1 group" data-path="faq" href="#faq">FAQ<span class="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#a47b55] transition-all duration-300 group-hover:w-full"></span></a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="hidden sm:inline-flex items-center justify-center gap-2 bg-[#4a2e24] hover:bg-[#151311] text-on-secondary font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase px-6 py-3 transition-all duration-300 group shadow-sm hover:shadow" data-path="growth-plan" href="#contact-cta"><span class="">Contact Us</span><span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span></a><button aria-label="Toggle Menu" class="md:hidden flex items-center justify-center p-2 text-on-surface hover:text-[#4a2e24] focus:outline-none transition-colors" onclick="const drawer = document.getElementById('mobile-drawer'); drawer.classList.toggle('hidden');" type="button"><span class="material-symbols-outlined text-2xl">menu</span></button></div></div><div class="hidden md:hidden bg-surface border-b border-outline-variant/40 px-margin-mobile py-4 transition-all" id="mobile-drawer"><nav class="flex flex-col space-y-3"><a class="font-label-ui text-label-ui text-[#4a2e24] font-medium" data-path="home" href="#">Home</a><a class="font-label-ui text-label-ui text-on-surface-variant" data-path="our-system" href="#our-system">Our System</a><a class="font-label-ui text-label-ui text-on-surface-variant" data-path="results" href="#performance-section">Results</a><a class="font-label-ui text-label-ui text-on-surface-variant" data-path="about" href="#">About</a><a class="font-label-ui text-label-ui text-on-surface-variant" data-path="faq" href="#faq">FAQ</a><a class="inline-flex items-center justify-center gap-2 bg-[#4a2e24] text-white py-3 font-label-uppercase text-label-uppercase uppercase tracking-wider mt-2" data-path="growth-plan" href="#contact-cta">Get a Growth Plan →</a></nav></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop pt-space-md lg:pt-space-lg pb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-center">
+<!-- Left Column: Strategy & Conversion Copy (Col 1-6 / 50%) -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-space-md lg:pr-space-sm">
+<!-- Eyebrow Tag -->
+<div class="flex items-center gap-2.5 animate-fade-up">
+<span class="w-2 h-2 bg-[#a47b55] rotate-45 shrink-0 inline-block shadow-sm"></span>
+<span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold"><br></span>
+</div>
+<!-- Expressive Headline with subtle upward fade -->
+<h1 class="font-headline-lg text-headline-lg lg:text-display-hero text-[#151311] leading-[1.03] tracking-tight animate-fade-up-delay-1">
+          Turn Property Enquiries Into Qualified Buyers &amp; Site Visits.
+        </h1>
+<!-- Supporting Paragraph -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed animate-fade-up-delay-2">
+          We help real estate businesses attract the right prospects, capture enquiries, automate follow-ups, and turn more opportunities into qualified buyers and booked site visits.
+        </p>
+<!-- CTA & Secondary Action -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs animate-fade-up-delay-2">
+<a class="inline-flex items-center justify-center gap-space-xs bg-[#4a2e24] hover:bg-[#151311] text-on-secondary px-8 py-4 font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase transition-all duration-300 group shadow-md hover:shadow-lg" data-path="growth-plan" href="#contact-cta">
+<span class="">Get Your Property Growth Plan</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-1.5 font-label-ui text-label-ui text-on-surface hover:text-[#a47b55] py-2 border-b border-[#151311] hover:border-[#a47b55] transition-all duration-200 group self-start sm:self-center" data-path="our-system" href="#our-system">
+<span class="font-medium tracking-wide">See How the System Works</span>
+<span class="material-symbols-outlined text-[15px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Supporting System Line below CTAs -->
+<div class="pt-1 flex items-center gap-2 text-on-surface-variant font-label-uppercase text-[11px] tracking-[0.12em] uppercase">
+
+
+</div>
+<!-- Refined Trust Marker Badge -->
+<div class="pt-space-xs flex items-center gap-space-xs text-on-surface-variant border-t border-outline-variant/40 mt-space-xs">
+<span class="material-symbols-outlined text-[#a47b55] text-[18px] shrink-0" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<p class="font-body-sm text-body-sm tracking-wide text-on-surface-variant">
+            Built for property developers, prime luxury brokerages, and residential sales teams.
+          </p>
+</div>
+<!-- Architectural Micro Spec Bar -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div>
+
+
+</div>
+<div>
+
+
+</div>
+<div>
+
+
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Architecture & Pipeline Display (Col 7-12 / 50%) -->
+<div class="lg:col-span-6 relative flex flex-col justify-center h-full animate-reveal-image">
+<!-- Architectural Frame Container -->
+<div class="relative w-full aspect-[4/3.8] lg:aspect-[4/4.1] bg-surface-container overflow-hidden shadow-2xl border border-outline-variant/30">
+<img alt="Modern architectural luxury residential development pavilion featuring floor-to-ceiling glass and natural stone terrace" class="w-full h-full object-cover object-center transform hover:scale-[1.02] transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XNxOSn6fMKcX66dBCLJ9rEA_bQ_FhC19uan7OOwxm2zmezF_RUcH2FHR8Kit_7mTuEpd70pgt4yoRvNJR8aszBCQsitY4uv1DNkFQHaoNaEeEHUwNt2t-UnXRHCCVnmeY-wuVymrI4RhQuLw77HlM-7b3ig4Jtihu4nATxa4kFkz_0br9rAUat8ObTSmYi7OZQq9fnQtYNlFtI8iE8sdi6pjtqBlgHwm6mahzvh2Mh8NEOsjIXco4pCOg">
+<!-- Top Photographic Tag -->
+<div class="absolute top-4 left-4 z-10 flex items-center gap-2 bg-[#fef9f1]/95 backdrop-blur-md px-3 py-1.5 border border-outline-variant/40 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+<span class="font-label-uppercase text-[9px] text-[#151311] tracking-[0.2em] uppercase font-semibold">Live Execution Model</span>
+</div>
+<!-- Overlay Blueprint Card: 4 Stages Architecture -->
+<div class="absolute bottom-4 left-4 right-4 z-20 bg-[#fef9f1]/95 backdrop-blur-md p-space-sm sm:p-space-md border border-outline-variant/40 shadow-xl">
+<div class="flex items-center justify-between mb-3 pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] uppercase tracking-[0.18em] text-[#4a2e24] font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-[#a47b55] rotate-45 inline-block"></span>
+                Conversion Pipeline Architecture
+              </span>
+<span class="font-label-uppercase text-[9px] text-on-surface-variant tracking-wider uppercase">
+                Stage 01 – Stage 04
+              </span>
+</div>
+<!-- Connected 4-Stage Pathway -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<!-- Stage 1 -->
+<div class="flex flex-col bg-surface-container-low/80 p-2.5 relative border border-outline-variant/20 hover:border-[#a47b55]/50 transition-colors">
+<span class="font-label-uppercase text-[9px] text-[#a47b55] tracking-widest uppercase font-semibold">01</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] leading-tight mt-0.5">Advertising</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">High-intent intent pool</span>
+</div>
+<!-- Stage 2 -->
+<div class="flex flex-col bg-surface-container-low/80 p-2.5 relative border border-outline-variant/20 hover:border-[#a47b55]/50 transition-colors">
+<span class="font-label-uppercase text-[9px] text-[#a47b55] tracking-widest uppercase font-semibold">02</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] leading-tight mt-0.5">Qualification</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">Financial &amp; readiness filter</span>
+</div>
+<!-- Stage 3 -->
+<div class="flex flex-col bg-surface-container-low/80 p-2.5 relative border border-outline-variant/20 hover:border-[#a47b55]/50 transition-colors">
+<span class="font-label-uppercase text-[9px] text-[#a47b55] tracking-widest uppercase font-semibold">03</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] leading-tight mt-0.5">Follow-up</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">Multi-touch concierge</span>
+</div>
+<!-- Stage 4 -->
+<div class="flex flex-col bg-surface-container-low/80 p-2.5 relative border-l-2 border-[#4a2e24] border-t border-r border-b border-outline-variant/20 hover:bg-surface-container transition-colors">
+<span class="font-label-uppercase text-[9px] text-[#4a2e24] tracking-widest uppercase font-semibold">04</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] leading-tight mt-0.5">Site Visits</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">On-site buyer arrival</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Restrained Credentials & Brand Strip -->
+<div class="mt-space-lg pt-space-md border-t border-outline-variant/40">
+
+</div>
+</section>
+<!-- SECTION 2: THE UPVERT PROPERTY SALES SYSTEM -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl border-t border-outline-variant/30" id="our-system"><div class="flex flex-col space-y-space-lg"><div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md max-w-4xl"><div class="space-y-space-xs"><div class="flex items-center gap-2.5"><span class="w-2 h-2 bg-[#a47b55] rotate-45 shrink-0 inline-block shadow-sm"></span><span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold">THE UPVERT PROPERTY SALES SYSTEM</span></div><h2 class="font-headline-lg text-headline-lg lg:text-[54px] text-[#151311] leading-[1.05] tracking-tight">One System. From First Click to Site Visit.</h2></div><p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">From reaching the right property buyers to coordinating the next step, we connect advertising, landing pages, automated follow-ups and sales processes into one cohesive growth system.</p></div><div class="relative pt-space-md"><div class="hidden lg:block absolute top-[52px] left-[6%] right-[6%] h-[1px] bg-outline-variant/40 z-0"></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative z-10"><div class="bg-surface-container-low/90 p-space-sm border border-outline-variant/30 flex flex-col justify-between space-y-space-md relative hover:border-[#a47b55]/60 transition-colors duration-300 shadow-sm"><div class="space-y-space-xs"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30"><div class="flex items-center gap-2"><span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STAGE 01</span><span class="text-[10px] text-outline tracking-wider">/</span><span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">ATTRACT</span></div><span class="material-symbols-outlined text-[#a47b55] text-[20px]">filter_center_focus</span></div><h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Reach the Right Buyers</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Target relevant property buyers through Google Ads and Meta Ads, using campaigns aligned with your project, location and audience.</p></div><div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between"><span class="font-label-uppercase text-[10px] tracking-[0.14em] text-on-surface-variant uppercase">Media Deployment</span><span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span></div></div><div class="bg-surface-container-low/90 p-space-sm border border-outline-variant/30 flex flex-col justify-between space-y-space-md relative hover:border-[#a47b55]/60 transition-colors duration-300 shadow-sm"><div class="space-y-space-xs"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30"><div class="flex items-center gap-2"><span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STAGE 02</span><span class="text-[10px] text-outline tracking-wider">/</span><span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">CAPTURE</span></div><span class="material-symbols-outlined text-[#a47b55] text-[20px]">web</span></div><h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Turn Interest Into Enquiries</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Direct potential buyers to property-specific landing pages and enquiry forms designed to communicate project value and capture their details.</p></div><div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between"><span class="font-label-uppercase text-[10px] tracking-[0.14em] text-on-surface-variant uppercase">Conversion Interface</span><span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span></div></div><div class="bg-surface-container-low/90 p-space-sm border border-outline-variant/30 flex flex-col justify-between space-y-space-md relative hover:border-[#a47b55]/60 transition-colors duration-300 shadow-sm"><div class="space-y-space-xs"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30"><div class="flex items-center gap-2"><span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STAGE 03</span><span class="text-[10px] text-outline tracking-wider">/</span><span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">NURTURE</span></div><span class="material-symbols-outlined text-[#a47b55] text-[20px]">hub</span></div><h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Keep Buyers Engaged</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Connect enquiries to a CRM and structured WhatsApp follow-ups so your team can respond consistently and keep potential buyers moving forward.</p></div><div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between"><span class="font-label-uppercase text-[10px] tracking-[0.14em] text-on-surface-variant uppercase">Concierge Automation</span><span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span></div></div><div class="bg-surface-container-low/90 p-space-sm border-l-2 border-[#4a2e24] border-t border-r border-b border-outline-variant/30 flex flex-col justify-between space-y-space-md relative hover:border-[#a47b55]/60 transition-colors duration-300 shadow-sm"><div class="space-y-space-xs"><div class="flex items-center justify-between pb-3 border-b border-outline-variant/30"><div class="flex items-center gap-2"><span class="font-label-uppercase text-[11px] text-[#4a2e24] font-semibold tracking-widest">STAGE 04</span><span class="text-[10px] text-outline tracking-wider">/</span><span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">CONVERT</span></div><span class="material-symbols-outlined text-[#4a2e24] text-[20px]">key</span></div><h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Move Towards Site Visits</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Help sales teams prioritise qualified enquiries, coordinate conversations and guide interested prospects towards property site visits.</p></div><div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between"><span class="font-label-uppercase text-[10px] tracking-[0.14em] text-[#4a2e24] uppercase font-semibold">On-Site Arrival</span><span class="w-1.5 h-1.5 rounded-full bg-[#4a2e24]"></span></div></div></div></div><div class="mt-space-lg grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-stretch"><div class="lg:col-span-7 relative bg-surface-container border border-outline-variant/30 overflow-hidden shadow-xl"><div class="relative aspect-[16/10] w-full overflow-hidden"><img alt="High-end luxury architectural photography of a contemporary residential development framed by deep dramatic shadows" class="w-full h-full object-cover object-center transform hover:scale-[1.02] transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XO39IhEM9Q-OJEc475nEd9Tc21UQ6FapQcIOy84CSdU2p3xIWbSuuXdcorxjd1CwwO3N7xaRbZYdoqxPxwCUd1ZCg945KNVrWHtqPEGOEcKqMCRTjQctaBZfInb6qKkYFJyHxpqH8tVjy9hazI8bZX0o7bMyUc2KnYgyrEng9-f5Wg2KBjPw7EOmdNW-C0pQub_ytpl42FOzT_T-l6XjJyvLvCYrpuxO6_6NS9ox4NtF94307cxTozIg"><div class="absolute bottom-3 left-3 bg-[#fef9f1]/95 backdrop-blur-md px-3 py-1 border border-outline-variant/40 shadow-sm"><span class="font-label-uppercase text-[10px] tracking-[0.18em] text-[#151311] uppercase font-semibold">FIG. 3.1 INTEGRATED PIPELINE METHODOLOGY</span></div></div></div><div class="lg:col-span-5 bg-surface-container-low p-space-md border border-outline-variant/30 flex flex-col justify-between space-y-space-md"><div class="space-y-space-sm"><div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#a47b55]"></span><span class="font-label-uppercase text-[11px] uppercase tracking-[0.2em] text-[#a47b55] font-semibold">SYSTEM COHESION</span></div><h4 class="font-headline-sm text-headline-sm text-[#151311] leading-tight">Architectural alignment from media spend to handshake.</h4><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Unlike fragmented agencies operating silos, each touchpoint is engineered as a unified protocol. Data context follows the buyer from initial ad click through bespoke qualification logic to on-site reception.</p><div class="pt-space-xs space-y-2 border-t border-outline-variant/30"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm"><span class="material-symbols-outlined text-[#a47b55] text-[18px]">check</span><span class="">Zero friction transition from intent signals to CRM lead flow</span></div><div class="flex items-center gap-2 text-on-surface-variant font-body-sm"><span class="material-symbols-outlined text-[#a47b55] text-[18px]">check</span><span class="">Curated WhatsApp cadences maintaining luxury broker tone</span></div><div class="flex items-center gap-2 text-on-surface-variant font-body-sm"><span class="material-symbols-outlined text-[#a47b55] text-[18px]">check</span><span class="">Pre-vetted private site visits booked directly with sales teams</span></div></div></div></div></div><div class="pt-space-md pb-space-sm border-t border-outline-variant/30 text-center"><p class="font-headline-sm text-[22px] lg:text-[26px] text-on-surface leading-relaxed max-w-2xl mx-auto">Not disconnected marketing services. <span class="text-[#a47b55] italic font-headline-sm">One connected path</span> from buyer acquisition to sales follow-up.</p></div></div></section>
+<!-- SECTION 3: TRUST, PROOF & MEASURABLE PERFORMANCE -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl border-t border-outline-variant/30 bg-[#fef9f1]" id="performance-section">
+<div class="flex flex-col space-y-space-xl">
+<!-- Intro Header (2 Columns) -->
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 bg-[#a47b55] rotate-45 shrink-0 inline-block shadow-sm"></span>
+<span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold">
+      PERFORMANCE. TRANSPARENCY. ACCOUNTABILITY.
+    </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-start">
+<div class="lg:col-span-7">
+<h2 class="font-headline-lg text-headline-lg lg:text-[52px] text-[#151311] leading-[1.06] tracking-tight">
+        Every Marketing Rupee Should Move Buyers <span class="text-[#a47b55] italic font-headline-lg">Closer to Booking.</span>
+</h2>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between space-y-space-sm pt-2 lg:pt-1">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        More than leads. We connect marketing performance to qualified buyers, property viewings, and booking opportunities through transparent tracking and data-driven optimization.
+      </p>
+<div>
+<a class="inline-flex items-center gap-1.5 font-label-ui text-label-ui text-[#4a2e24] hover:text-[#151311] font-semibold tracking-wide border-b border-[#4a2e24]/40 hover:border-[#151311] pb-0.5 group transition-all" href="#measurement-methodology">
+<span class="">See How We Measure Performance</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Performance Dashboard Visual Centerpiece (Dark Architectural Terminal) -->
+<div class="bg-[#171411] text-[#fef9f1] rounded-xl border border-[#30231d] shadow-2xl p-space-sm sm:p-space-md lg:p-space-lg relative overflow-hidden">
+<!-- Subtle ambient gradient background glow -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-[#a47b55]/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Bar -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-space-sm border-b border-white/10 gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-[#a47b55]"></div>
+<span class="font-label-uppercase text-[12px] sm:text-[13px] tracking-[0.2em] uppercase text-white/90 font-semibold">
+        Campaign Performance Overview
+      </span>
+<span class="text-white/30 hidden sm:inline">|</span>
+
+</div>
+
+</div>
+<!-- 4 Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-space-md">
+<!-- Metric 1 -->
+<div class="bg-[#201c18]/90 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-white/60 uppercase tracking-widest">Marketing Spend</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">account_balance_wallet</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-[34px] leading-tight text-white font-semibold tracking-tight">₹2,40,000</div>
+<p class="font-body-sm text-[12px] text-white/55 mt-1 leading-snug">Allocated across Meta &amp; Google Ads</p>
+</div>
+<div class="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-[#ffdcbf]">
+<span class="font-label-ui">Leveraging Marketing Channel</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-[#201c18]/90 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-white/60 uppercase tracking-widest">Leads Generated</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">group_add</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-[34px] leading-tight text-white font-semibold tracking-tight">186</div>
+<p class="font-body-sm text-[12px] text-white/55 mt-1 leading-snug">Inquiries captured via custom landing pages</p>
+</div>
+<div class="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-emerald-400">
+<span class="font-label-ui">+14% vs. forecast</span>
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-[#201c18]/90 p-4 rounded-lg border border-[#a47b55]/30 flex flex-col justify-between shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-[#ffdcbf] uppercase tracking-widest font-semibold">Qualified Leads</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">verified_user</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-[34px] leading-tight text-[#ffdcbf] font-semibold tracking-tight">64</div>
+<p class="font-body-sm text-[12px] text-white/70 mt-1 leading-snug">High-intent buyer filter passed</p>
+</div>
+<div class="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-[#ffdcbf]">
+<span class="font-label-ui">34.4% Qualification rate</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-[#201c18]/90 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-white/60 uppercase tracking-widest">Site Visits Scheduled</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">calendar_month</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-[34px] leading-tight text-white font-semibold tracking-tight">18</div>
+<p class="font-body-sm text-[12px] text-white/55 mt-1 leading-snug">Private property tours booked</p>
+</div>
+<div class="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-[#ffdcbf]">
+<span class="font-label-ui">28.1% of qualified pool</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- SVG Chart + Funnel Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-2 pb-space-sm items-center">
+<!-- SVG Line Chart (Weekly qualification trend) -->
+<div class="lg:col-span-7 bg-[#1c1815] p-4 sm:p-5 rounded-lg border border-white/10">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-white/60">Cohort Trajectory</span>
+<h4 class="font-headline-sm text-[18px] text-white font-serif">Weekly Leads &amp; Qualification Trajectory</h4>
+</div>
+<div class="flex items-center gap-4 text-[11px] font-label-ui text-white/70">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-1 bg-[#a47b55] rounded-full inline-block"></span>
+<span class="">Total Enquiries</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-1 bg-white rounded-full inline-block"></span>
+<span class="">Qualified Pool</span>
+</div>
+</div>
+</div>
+<!-- SVG Chart Canvas -->
+<div class="w-full h-48 sm:h-52">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 540 180">
+<defs>
+<linearGradient id="leadGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#a47b55" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#a47b55" stop-opacity="0"></stop>
+</linearGradient>
+<linearGradient id="qualGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#ffffff" stroke-dasharray="2 3" stroke-opacity="0.08" x1="30" x2="520" y1="20" y2="20"></line>
+<line stroke="#ffffff" stroke-dasharray="2 3" stroke-opacity="0.08" x1="30" x2="520" y1="65" y2="65"></line>
+<line stroke="#ffffff" stroke-dasharray="2 3" stroke-opacity="0.08" x1="30" x2="520" y1="110" y2="110"></line>
+<line stroke="#ffffff" stroke-opacity="0.12" x1="30" x2="520" y1="155" y2="155"></line>
+<!-- Y-axis labels -->
+<text fill="#ffffff" fill-opacity="0.4" font-family="DM Sans" font-size="9" x="10" y="24">40</text>
+<text fill="#ffffff" fill-opacity="0.4" font-family="DM Sans" font-size="9" x="10" y="69">25</text>
+<text fill="#ffffff" fill-opacity="0.4" font-family="DM Sans" font-size="9" x="10" y="114">10</text>
+<text fill="#ffffff" fill-opacity="0.4" font-family="DM Sans" font-size="9" x="14" y="158">0</text>
+<!-- Total Leads Area & Curve (Bronze) -->
+<!-- Points: W1(50, 130) W2(140, 105) W3(230, 80) W4(320, 55) W5(410, 42) W6(500, 32) -->
+<path d="M 50 130 C 95 120, 105 108, 140 105 C 185 100, 195 85, 230 80 C 275 75, 285 58, 320 55 C 365 50, 375 45, 410 42 C 455 38, 465 34, 500 32 L 500 155 L 50 155 Z" fill="url(#leadGrad)"></path>
+<path d="M 50 130 C 95 120, 105 108, 140 105 C 185 100, 195 85, 230 80 C 275 75, 285 58, 320 55 C 365 50, 375 45, 410 42 C 455 38, 465 34, 500 32" fill="none" stroke="#a47b55" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Qualified Leads Area & Curve (Ivory) -->
+<!-- Points: W1(50, 145) W2(140, 135) W3(230, 120) W4(320, 100) W5(410, 88) W6(500, 75) -->
+<path d="M 50 145 C 95 140, 105 137, 140 135 C 185 132, 195 124, 230 120 C 275 116, 285 104, 320 100 C 365 96, 375 90, 410 88 C 455 85, 465 78, 500 75 L 500 155 L 50 155 Z" fill="url(#qualGrad)"></path>
+<path d="M 50 145 C 95 140, 105 137, 140 135 C 185 132, 195 124, 230 120 C 275 116, 285 104, 320 100 C 365 96, 375 90, 410 88 C 455 85, 465 78, 500 75" fill="none" stroke="#fef9f1" stroke-linecap="round" stroke-width="2"></path>
+<!-- Data Dots -->
+<circle cx="50" cy="130" fill="#a47b55" r="3.5" stroke="#171411" stroke-width="2"></circle>
+<circle cx="140" cy="105" fill="#a47b55" r="3.5" stroke="#171411" stroke-width="2"></circle>
+<circle cx="230" cy="80" fill="#a47b55" r="3.5" stroke="#171411" stroke-width="2"></circle>
+<circle cx="320" cy="55" fill="#a47b55" r="3.5" stroke="#171411" stroke-width="2"></circle>
+<circle cx="410" cy="42" fill="#a47b55" r="3.5" stroke="#171411" stroke-width="2"></circle>
+<circle cx="500" cy="32" fill="#a47b55" r="4.5" stroke="#fef9f1" stroke-width="2"></circle>
+<circle cx="50" cy="145" fill="#fef9f1" r="3" stroke="#171411" stroke-width="1.5"></circle>
+<circle cx="140" cy="135" fill="#fef9f1" r="3" stroke="#171411" stroke-width="1.5"></circle>
+<circle cx="230" cy="120" fill="#fef9f1" r="3" stroke="#171411" stroke-width="1.5"></circle>
+<circle cx="320" cy="100" fill="#fef9f1" r="3" stroke="#171411" stroke-width="1.5"></circle>
+<circle cx="410" cy="88" fill="#fef9f1" r="3" stroke="#171411" stroke-width="1.5"></circle>
+<circle cx="500" cy="75" fill="#ffffff" r="4" stroke="#a47b55" stroke-width="2"></circle>
+<!-- X-axis labels -->
+<text fill="#ffffff" fill-opacity="0.45" font-family="DM Sans" font-size="9" x="40" y="172">W1</text>
+<text fill="#ffffff" fill-opacity="0.45" font-family="DM Sans" font-size="9" x="130" y="172">W2</text>
+<text fill="#ffffff" fill-opacity="0.45" font-family="DM Sans" font-size="9" x="220" y="172">W3</text>
+<text fill="#ffffff" fill-opacity="0.45" font-family="DM Sans" font-size="9" x="310" y="172">W4</text>
+<text fill="#ffffff" fill-opacity="0.45" font-family="DM Sans" font-size="9" x="400" y="172">W5</text>
+<text fill="#ffffff" fill-opacity="0.75" font-family="DM Sans" font-size="9" font-weight="600" x="490" y="172">W6</text>
+</svg>
+</div>
+</div>
+<!-- Funnel Visualization Column -->
+<div class="lg:col-span-5 bg-[#1c1815] p-4 sm:p-5 rounded-lg border border-white/10 flex flex-col justify-between">
+<div class="mb-3">
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-white/60">Funnel Throughput</span>
+<h4 class="font-headline-sm text-[18px] text-white font-serif">Conversion Cascade Ratio</h4>
+</div>
+<!-- Linear Connected Funnel -->
+<div class="space-y-3 py-1">
+<!-- Milestone 1 -->
+<div>
+<div class="flex justify-between text-xs font-label-ui mb-1">
+<span class="text-white/80 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+              Campaign Reach
+            </span>
+<span class="text-white/50">1,42,000 Impressions</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-[#a47b55] rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div>
+<div class="flex justify-between text-xs font-label-ui mb-1">
+<span class="text-white/80 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+              Leads Incurred
+            </span>
+<span class="text-[#ffdcbf] font-medium">186 Inquiries</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-[#a47b55] rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div>
+<div class="flex justify-between text-xs font-label-ui mb-1">
+<span class="text-white/80 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              Qualified Buyers
+            </span>
+<span class="text-white font-semibold">64 Prospects (34.4%)</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-[#fef9f1] rounded-full" style="width: 44%;"></div>
+</div>
+</div>
+<!-- Milestone 4 -->
+<div>
+<div class="flex justify-between text-xs font-label-ui mb-1">
+<span class="text-white/80 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#ffdcbf]"></span>
+              Site Visits Conducted
+            </span>
+<span class="text-[#ffdcbf] font-semibold">18 Tours (28.1%)</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-[#ffdcbf] rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+<!-- Milestone 5 -->
+<div>
+<div class="flex justify-between text-xs font-label-ui mb-1">
+<span class="text-white font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              Unit Bookings
+            </span>
+<span class="text-emerald-400 font-semibold">5 Units Reserved</span>
+</div>
+<div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-emerald-400 rounded-full" style="width: 14%;"></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- Disclaimer Footer -->
+<div class="pt-3 border-t border-white/10 flex items-center justify-between text-white/45 text-[11px]">
+<p class="">Sample dashboard for demonstration purposes. Actual performance varies by project, market, pricing, and campaign strategy.</p>
+<span class="font-label-uppercase text-[9px] tracking-wider uppercase hidden md:inline text-[#a47b55]">Upvert Performance Engine</span>
+</div>
+</div>
+<!-- Measurement Methodology Subsection -->
+<div class="space-y-space-md pt-space-md" id="measurement-methodology">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div>
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] uppercase text-[#a47b55] font-semibold">ACCOUNTABILITY BLUEPRINT</span>
+<h3 class="font-headline-lg text-headline-sm lg:text-[38px] text-[#151311] leading-tight mt-1">From First Click to Final Booking.</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+      Every interaction is audited against measurable business milestones, removing speculation and replacing vanity clicks with real on-ground results.
+    </p>
+</div>
+<!-- 4 Connected Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
+<!-- Step 01 -->
+<div class="bg-surface-container-low p-space-sm border border-outline-variant/30 relative flex flex-col justify-between space-y-space-sm hover:border-[#a47b55]/60 transition-colors shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STEP 01</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">ads_click</span>
+</div>
+<h4 class="font-headline-sm text-[22px] text-[#151311]">Capture</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Track inquiries from Google Ads, Meta Ads, landing pages, and other campaign sources with granular UTM attribution.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant font-label-uppercase">
+<span class="">Attribution Audit</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-low p-space-sm border border-outline-variant/30 relative flex flex-col justify-between space-y-space-sm hover:border-[#a47b55]/60 transition-colors shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STEP 02</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">checklist_rtl</span>
+</div>
+<h4 class="font-headline-sm text-[22px] text-[#151311]">Qualify</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Measure lead quality using buyer intent, budget alignment, preferred property configuration, and realistic purchase timeline.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant font-label-uppercase">
+<span class="">Intent Verification</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-low p-space-sm border border-outline-variant/30 relative flex flex-col justify-between space-y-space-sm hover:border-[#a47b55]/60 transition-colors shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STEP 03</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">sensor_door</span>
+</div>
+<h4 class="font-headline-sm text-[22px] text-[#151311]">Convert</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Track follow-ups, scheduled site visits, attended viewings, and booking progression directly with sales reps on ground.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant font-label-uppercase">
+<span class="">Site Visit Coordination</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-container-low p-space-sm border border-outline-variant/30 relative flex flex-col justify-between space-y-space-sm hover:border-[#a47b55]/60 transition-colors shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">STEP 04</span>
+<span class="material-symbols-outlined text-[#a47b55] text-[18px]">query_stats</span>
+</div>
+<h4 class="font-headline-sm text-[22px] text-[#151311]">Optimize</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Use campaign and CRM data to improve lead quality, reduce wasted spend, and identify the channels generating meaningful opportunities.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant font-label-uppercase">
+<span class="">Capital Optimization</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#4a2e24]"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust & Accountability Strip -->
+<div class="bg-surface-container-high/60 border border-outline-variant/40 p-4 sm:p-5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+<div class="flex items-center justify-center md:justify-start gap-3 px-3 py-1">
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">bar_chart</span>
+<span class="font-label-uppercase text-[12px] tracking-wider uppercase text-[#151311] font-semibold">
+        Transparent campaign reporting
+      </span>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-3 px-3 py-1">
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">filter_alt</span>
+<span class="font-label-uppercase text-[12px] tracking-wider uppercase text-[#151311] font-semibold">
+        Lead quality over vanity metrics
+      </span>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-3 px-3 py-1">
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">timeline</span>
+<span class="font-label-uppercase text-[12px] tracking-wider uppercase text-[#151311] font-semibold">
+        Performance measured across the sales funnel
+      </span>
+</div>
+</div>
+</div>
+<!-- Bottom Section CTA Card -->
+<div class="bg-surface-container-low border border-outline-variant/30 p-space-md lg:p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md" id="contact-cta">
+<div class="space-y-space-xs max-w-xl text-center md:text-left">
+<span class="font-label-uppercase text-[10px] uppercase tracking-[0.2em] text-[#a47b55] font-semibold">TAKE COMMAND OF YOUR GROWTH</span>
+<h3 class="font-headline-sm text-headline-sm lg:text-[32px] text-[#151311] leading-tight">
+      Know What Your Marketing Is Actually Delivering.
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Build a clearer picture of lead quality, viewing opportunities, and campaign performance.
+    </p>
+</div>
+<div class="shrink-0">
+<a class="inline-flex items-center justify-center gap-space-xs bg-[#4a2e24] hover:bg-[#151311] text-[#fef9f1] px-8 py-4 font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase transition-all duration-300 group shadow-md hover:shadow-lg" data-path="discuss-project" href="#">
+<span class="">Discuss Your Project</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: WHY REAL ESTATE TEAMS CHOOSE UPVERT -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl border-t border-outline-variant/30 bg-[#fef9f1]" id="why-choose-upvert">
+<div class="flex flex-col space-y-space-xl">
+<!-- 1. Section Introduction -->
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 bg-[#a47b55] rotate-45 shrink-0 inline-block shadow-sm"></span>
+<span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold">
+      WHY REAL ESTATE TEAMS CHOOSE UPVERT
+    </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-center">
+<div class="lg:col-span-7 space-y-space-xs">
+<h2 class="font-headline-lg text-headline-lg lg:text-[52px] text-[#151311] leading-[1.06] tracking-tight">
+      Stop Losing Buyers Between Enquiry and <span class="text-[#a47b55] italic font-headline-lg">Site Visit.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+      Great marketing should do more than fill your CRM. Upvert connects targeted campaigns, buyer qualification, faster follow-ups, and transparent reporting to help your sales team move serious prospects forward.
+    </p>
+</div>
+<!-- Side Visual: Minimal Connected Journey Diagram -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-low border border-outline-variant/40 p-space-sm sm:p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-outline-variant/20">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-[#a47b55] rounded-full inline-block"></span>
+          Direct Journey Conversion
+        </span>
+<span class="font-label-uppercase text-[9px] text-[#a47b55] tracking-wider uppercase font-semibold">Active Path</span>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 relative">
+<!-- Step 1 -->
+<div class="flex-1 bg-surface-container p-3 rounded border border-outline-variant/30 text-center">
+<span class="font-label-uppercase text-[9px] text-[#a47b55] block uppercase font-semibold">Step 01</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] block mt-0.5">Incoming Enquiry</span>
+</div>
+<div class="flex justify-center items-center py-1 sm:py-0 text-outline shrink-0">
+<span class="material-symbols-outlined text-[18px] text-[#a47b55] rotate-90 sm:rotate-0">arrow_forward</span>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 bg-surface-container p-3 rounded border border-outline-variant/30 text-center">
+<span class="font-label-uppercase text-[9px] text-[#a47b55] block uppercase font-semibold">Step 02</span>
+<span class="font-body-sm font-semibold text-[#151311] text-[12px] block mt-0.5">Qualified Buyer</span>
+</div>
+<div class="flex justify-center items-center py-1 sm:py-0 text-outline shrink-0">
+<span class="material-symbols-outlined text-[18px] text-[#a47b55] rotate-90 sm:rotate-0">arrow_forward</span>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 bg-[#4a2e24] p-3 rounded border border-[#4a2e24] text-center text-white shadow-sm">
+<span class="font-label-uppercase text-[9px] text-[#ffdcbf] block uppercase font-semibold">Outcome</span>
+<span class="font-body-sm font-semibold text-white text-[12px] block mt-0.5">Scheduled Site Visit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Four Key Differentiators (2x2 Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 01: Better-Qualified Buyers -->
+<div class="bg-surface-container-low p-space-md border border-outline-variant/30 rounded-lg flex flex-col justify-between space-y-space-md shadow-sm hover:border-[#a47b55]/60 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">01</span>
+<span class="text-[10px] text-outline tracking-wider">/</span>
+<span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">BETTER-QUALIFIED BUYERS</span>
+</div>
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">person_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Know Who Your Sales Team Is Talking To.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Capture buyer requirements such as budget, preferred location, property type, and purchase timeline to help your team prioritize relevant enquiries.
+    </p>
+</div>
+<!-- Visual: Sample Buyer Card -->
+<div class="bg-surface-container p-3 sm:p-4 rounded border border-outline-variant/40 space-y-2.5">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-on-surface-variant font-medium">Buyer Audit Profile</span>
+<span class="inline-flex items-center gap-1 text-[10px] font-label-uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold tracking-wider uppercase">Verified Tier 1</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-[12px]">
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Budget</span>
+<span class="font-semibold text-[#151311] mt-0.5 block">$1.8M – $2.5M</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Location</span>
+<span class="font-semibold text-[#151311] mt-0.5 block">Mayfair / Marylebone</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Property Type</span>
+<span class="font-semibold text-[#151311] mt-0.5 block">3-Bed Penthouse</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Purchase Timeline</span>
+<span class="font-semibold text-[#4a2e24] mt-0.5 block">0–3 Months</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 02: Faster Lead Routing -->
+<div class="bg-surface-container-low p-space-md border border-outline-variant/30 rounded-lg flex flex-col justify-between space-y-space-md shadow-sm hover:border-[#a47b55]/60 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">02</span>
+<span class="text-[10px] text-outline tracking-wider">/</span>
+<span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">FASTER LEAD ROUTING</span>
+</div>
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">alt_route</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Get Every Enquiry to the Right Person.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Route incoming leads to the appropriate sales representative, notify the team promptly, and reduce delays between enquiry submission and first contact.
+    </p>
+</div>
+<!-- Visual: Lead routing flowchart -->
+<div class="bg-surface-container p-3 sm:p-4 rounded border border-outline-variant/40 space-y-2.5">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-on-surface-variant font-medium">Instant Dispatch Logic</span>
+<span class="font-label-ui text-[11px] text-[#a47b55] font-semibold">SLA: &lt; 2 Minutes</span>
+</div>
+<div class="flex items-center justify-between gap-1.5 sm:gap-2">
+<div class="flex-1 bg-surface-container-low p-2 rounded border border-outline-variant/20 text-center">
+<span class="material-symbols-outlined text-[#a47b55] text-[18px] block">mail</span>
+<span class="text-[11px] font-semibold text-[#151311] block mt-0.5">New Enquiry</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">trending_flat</span>
+<div class="flex-1 bg-[#201c18] text-white p-2 rounded border border-outline-variant/20 text-center">
+<span class="material-symbols-outlined text-[#ffdcbf] text-[18px] block">bolt</span>
+<span class="text-[11px] font-semibold text-[#ffdcbf] block mt-0.5">Instant Routing</span>
+<span class="text-[9px] text-white/50 block font-label-ui">(&lt; 2 min)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">trending_flat</span>
+<div class="flex-1 bg-surface-container-low p-2 rounded border border-outline-variant/20 text-center">
+<span class="material-symbols-outlined text-[#4a2e24] text-[18px] block">support_agent</span>
+<span class="text-[11px] font-semibold text-[#151311] block mt-0.5 leading-tight">Sales Lead Specialist</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 03: Automated WhatsApp Follow-Ups -->
+<div class="bg-surface-container-low p-space-md border border-outline-variant/30 rounded-lg flex flex-col justify-between space-y-space-md shadow-sm hover:border-[#a47b55]/60 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">03</span>
+<span class="text-[10px] text-outline tracking-wider">/</span>
+<span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">AUTOMATED WHATSAPP FOLLOW-UPS</span>
+</div>
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">chat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">Keep the Conversation Moving.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Use timely WhatsApp follow-ups, enquiry acknowledgements, and site-visit reminders to help your team maintain consistent communication with prospective buyers.
+    </p>
+</div>
+<!-- Visual: Editorial message cards (Fictional Sample) -->
+<div class="bg-surface-container p-3 sm:p-4 rounded border border-outline-variant/40 space-y-2">
+<div class="flex items-center justify-between pb-1.5 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-on-surface-variant font-medium">Concierge Cadence</span>
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase tracking-wider">Fictional Sample</span>
+</div>
+<div class="space-y-1.5">
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20 flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55] mt-1.5 shrink-0"></span>
+<p class="text-[12px] text-on-surface italic leading-snug">"Thank you for your interest in the property."</p>
+</div>
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20 flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55] mt-1.5 shrink-0"></span>
+<p class="text-[12px] text-on-surface italic leading-snug">"Would you prefer a weekday or weekend viewing?"</p>
+</div>
+<div class="bg-surface-container-low p-2 rounded border border-outline-variant/20 flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0"></span>
+<p class="text-[12px] text-[#151311] font-medium leading-snug">"Your site visit reminder is confirmed."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 04: End-to-End Performance Tracking -->
+<div class="bg-surface-container-low p-space-md border border-outline-variant/30 rounded-lg flex flex-col justify-between space-y-space-md shadow-sm hover:border-[#a47b55]/60 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="font-label-uppercase text-[11px] text-[#a47b55] font-semibold tracking-widest">04</span>
+<span class="text-[10px] text-outline tracking-wider">/</span>
+<span class="font-label-uppercase text-[11px] text-[#151311] tracking-wider uppercase font-semibold">END-TO-END PERFORMANCE TRACKING</span>
+</div>
+<span class="material-symbols-outlined text-[#a47b55] text-[20px]">stacked_line_chart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#151311] pt-1">See What Happens After the Click.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Connect campaign reporting with CRM activity to understand lead quality, contact rates, scheduled site visits, attended viewings, and bookings where tracking is available.
+    </p>
+</div>
+<!-- Visual: Pipeline Tracker -->
+<div class="bg-surface-container p-3 sm:p-4 rounded border border-outline-variant/40 space-y-2.5">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-on-surface-variant font-medium">Attribution Chain</span>
+<span class="font-label-uppercase text-[9px] text-[#4a2e24] uppercase tracking-wider font-semibold">Full Pipeline</span>
+</div>
+<div class="grid grid-cols-5 gap-1 text-center">
+<div class="bg-surface-container-low p-1.5 rounded border border-outline-variant/20">
+<span class="text-[9px] font-label-uppercase text-on-surface-variant uppercase block">Spend</span>
+<span class="text-[11px] font-semibold text-[#151311] mt-0.5 block leading-tight">Ad Spend</span>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded border border-outline-variant/20">
+<span class="text-[9px] font-label-uppercase text-on-surface-variant uppercase block">Inbound</span>
+<span class="text-[11px] font-semibold text-[#151311] mt-0.5 block leading-tight">Enquiries</span>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded border border-outline-variant/20">
+<span class="text-[9px] font-label-uppercase text-[#a47b55] uppercase block font-semibold">Filtered</span>
+<span class="text-[11px] font-semibold text-[#a47b55] mt-0.5 block leading-tight">Qualified</span>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded border border-outline-variant/20">
+<span class="text-[9px] font-label-uppercase text-[#4a2e24] uppercase block font-semibold">Tours</span>
+<span class="text-[11px] font-semibold text-[#4a2e24] mt-0.5 block leading-tight">Site Visits</span>
+</div>
+<div class="bg-[#151311] text-white p-1.5 rounded border border-black">
+<span class="text-[9px] font-label-uppercase text-[#ffdcbf] uppercase block font-semibold">Success</span>
+<span class="text-[11px] font-semibold text-white mt-0.5 block leading-tight">Bookings</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Connected Sales Journey Timeline Strip -->
+<div class="bg-surface-container-low p-space-sm sm:p-space-md border border-outline-variant/30 rounded-lg">
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[11px] uppercase tracking-[0.2em] text-[#a47b55] font-semibold flex items-center gap-2">
+<span class="w-2 h-2 bg-[#a47b55] rotate-45 inline-block"></span>
+      Connected Sales Journey Protocol
+    </span>
+
+</div>
+<div class="relative py-2">
+<!-- Connecting hairline line -->
+<div class="hidden sm:block absolute top-[27px] left-[5%] right-[5%] h-[1px] bg-outline-variant/50 z-0"></div>
+<div class="grid grid-cols-2 sm:grid-cols-6 gap-3 sm:gap-2 relative z-10">
+<!-- Stage 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface border-2 border-[#a47b55] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#a47b55]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#151311] font-semibold">CAMPAIGN</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Targeted Reach</span>
+</div>
+<!-- Stage 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface border-2 border-[#a47b55] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#a47b55]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#151311] font-semibold">ENQUIRY</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Landing Capture</span>
+</div>
+<!-- Stage 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface border-2 border-[#a47b55] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#a47b55]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#151311] font-semibold">QUALIFICATION</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Intent Verified</span>
+</div>
+<!-- Stage 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface border-2 border-[#a47b55] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#a47b55]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#151311] font-semibold">FOLLOW-UP</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">WhatsApp Touch</span>
+</div>
+<!-- Stage 5 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface border-2 border-[#4a2e24] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#4a2e24]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#4a2e24] font-semibold">SITE VISIT</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Tour Confirmed</span>
+</div>
+<!-- Stage 6 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-[#151311] border-2 border-[#151311] flex items-center justify-center mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#ffdcbf]"></span>
+</div>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-[#151311] font-semibold">BOOKING</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Unit Reserved</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Traditional vs. Upvert Comparison Panel (Dark Architectural Panel) -->
+<div class="bg-[#171411] text-[#fef9f1] rounded-xl border border-[#30231d] shadow-2xl p-space-md lg:p-space-lg relative overflow-hidden">
+<div class="space-y-space-xs text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-uppercase text-[10px] uppercase tracking-[0.2em] text-[#ffdcbf] font-semibold">COMPARATIVE ARCHITECTURE</span>
+<h3 class="font-headline-lg text-headline-sm lg:text-[38px] text-white leading-tight">
+      Generating Leads Is Only Half the Job.
+    </h3>
+<p class="font-body-md text-white/70">
+      The difference is what happens after someone enquires.
+    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-stretch">
+<!-- Left Column: Traditional Lead Generation -->
+<div class="bg-[#201c18]/90 rounded-lg p-space-sm sm:p-space-md border border-white/5 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+<h4 class="font-headline-sm text-[20px] text-white/80">Traditional Lead Generation</h4>
+<span class="font-label-uppercase text-[9px] uppercase tracking-wider px-2 py-1 rounded bg-red-950/60 text-red-300 border border-red-900/40">Disconnected Process</span>
+</div>
+<ul class="space-y-3 font-body-sm text-[13px] text-white/65">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-red-400/80 text-[18px] shrink-0">close</span>
+<span class="">Leads arrive without sufficient qualification</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-red-400/80 text-[18px] shrink-0">close</span>
+<span class="">Enquiries are manually distributed or overlooked</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-red-400/80 text-[18px] shrink-0">close</span>
+<span class="">Follow-ups depend heavily on individual sales representatives</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-red-400/80 text-[18px] shrink-0">close</span>
+<span class="">Site visits and bookings are difficult to attribute to campaigns</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-red-400/80 text-[18px] shrink-0">close</span>
+<span class="">Reporting focuses primarily on clicks and lead volume</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-white/5 text-[11px] text-white/40 font-label-ui">
+        Result: High churn, slow contact speed, and low visit conversion
+      </div>
+</div>
+<!-- Right Column: Upvert's Connected Sales System -->
+<div class="bg-[#261f1a] rounded-lg p-space-sm sm:p-space-md border border-[#a47b55]/50 flex flex-col justify-between shadow-xl relative">
+<div class="absolute -top-2.5 right-4 bg-[#a47b55] text-[#151311] px-2.5 py-0.5 rounded-full font-label-uppercase text-[9px] uppercase font-bold tracking-widest shadow-sm">
+        Recommended Standard
+      </div>
+<div>
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+<h4 class="font-headline-sm text-[20px] text-white">Upvert's Connected Sales System</h4>
+<span class="font-label-uppercase text-[9px] uppercase tracking-wider px-2 py-1 rounded bg-[#a47b55]/20 text-[#ffdcbf] border border-[#a47b55]/40">Connected Workflow</span>
+</div>
+<ul class="space-y-3 font-body-sm text-[13px] text-white/90">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-emerald-400">check</span>
+<span class="">Capture buyer requirements and qualification signals</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-emerald-400">check</span>
+<span class="">Route enquiries to the appropriate sales representative</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-emerald-400">check</span>
+<span class="">Support consistent follow-ups and visit reminders</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-emerald-400">check</span>
+<span class="">Track progression through the sales funnel</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-emerald-400">check</span>
+<span class="">Connect marketing performance to available CRM and booking data</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-white/10 text-[11px] text-[#ffdcbf] font-label-ui flex items-center justify-between">
+<span class="">Result: Higher site visit turn-out &amp; verified revenue impact</span>
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Section Call To Action -->
+<div class="bg-surface-container-low border border-outline-variant/30 p-space-md lg:p-space-lg rounded-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="space-y-space-xs max-w-xl text-center md:text-left">
+
+<h3 class="font-headline-sm text-headline-sm lg:text-[32px] text-[#151311] leading-tight">
+      Make Every Enquiry Count.
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Let's build a more connected path from property marketing to meaningful sales conversations.
+    </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0">
+<a class="inline-flex items-center justify-center gap-space-xs bg-[#4a2e24] hover:bg-[#151311] text-[#fef9f1] px-7 py-3.5 font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase transition-all duration-300 group shadow-md hover:shadow-lg w-full sm:w-auto" data-path="discuss-project" href="#contact-cta">
+<span class="">Discuss Your Project</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-[#151311] px-6 py-3.5 font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase border border-outline-variant/50 transition-all duration-300 group w-full sm:w-auto" data-path="explore-services" href="#our-system">
+<span class="">Explore Our Services</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section><!-- SECTION 5: COMMON QUESTIONS / FAQ ACCORDION -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl border-t border-outline-variant/30 bg-[#fef9f1]" id="about"><div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-center"><div class="lg:col-span-5"><div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-space-sm sm:p-space-md shadow-sm flex flex-col space-y-4"><div class="w-full aspect-[4/3.8] bg-[#e7e2da] rounded-lg border border-outline-variant/30 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden"><div class="w-20 h-20 rounded-full bg-[#151311] text-[#ffdcbf] flex items-center justify-center font-bold text-[22px] tracking-wider mb-4 border border-[#a47b55]/40 shadow-md"><span class="font-label-uppercase">UP</span></div><span class="font-label-uppercase text-[11px] text-on-surface-variant uppercase tracking-widest">[ADD REAL PHOTO]</span><span class="font-body-sm font-semibold text-[#151311] text-[13px] mt-1">Upesh Parmar — Founder</span><span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">High-res portrait placeholder</span></div><div class="space-y-1 pt-1"><h3 class="font-headline-sm text-[26px] text-[#151311] leading-tight">Upesh Parmar</h3><p class="font-label-uppercase text-[11px] text-[#a47b55] uppercase tracking-widest font-semibold">FOUNDER, UPVERT MEDIA</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed pt-1">Direct point of contact for every campaign strategy and technical audit.</p></div><a class="w-full inline-flex items-center justify-center gap-2 bg-[#151311] hover:bg-[#4a2e24] text-white py-3.5 px-4 rounded font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase transition-colors duration-300 shadow-sm mt-1" href="https://www.linkedin.com/in/upesh-parmar-360214247/" rel="noopener noreferrer" target="_blank"><span class="">VIEW LINKEDIN</span><span class="material-symbols-outlined text-[16px]">open_in_new</span></a></div></div><div class="lg:col-span-7 flex flex-col justify-center space-y-space-md lg:pl-space-sm"><div class="space-y-space-sm"><div class="flex items-center gap-2"><span class="text-[#a47b55] text-xs">◆</span><span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold">MEET THE FOUNDER</span></div><h2 class="font-headline-lg text-headline-lg lg:text-[52px] text-[#151311] leading-[1.05] tracking-tight">Run by someone who has spent 4 years in paid media.</h2></div><div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant leading-relaxed"><p class="">I'm Upesh Parmar, founder of Upvert Media. For 4 years I've run Google and Meta campaigns across real estate, jewellery retail, SaaS and travel. In real estate, I generated 120 qualified leads for a UK client.</p><p class="">What I kept seeing, in every industry, is that businesses pay for leads and then lose them between the click and the conversation. Upvert exists to close that gap for real estate. Every client works directly with me, with no account-manager hand-offs.</p></div><div class="flex flex-wrap items-center gap-2.5 pt-2"><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-[12px] font-label-ui text-on-surface font-medium"><span class="text-[#a47b55] text-[10px]">✦</span> 4 years in paid media</span><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-[12px] font-label-ui text-on-surface font-medium"><span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span> Google Ads and Meta Ads</span><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-[12px] font-label-ui text-on-surface font-medium"><span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span> Real estate, retail, SaaS, travel</span></div><div class="pt-3 border-t border-outline-variant/20"><p class="font-body-sm text-[12px] text-on-surface-variant">Based in India, serving Dubai real estate remotely.</p></div></div></div></section><section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl border-t border-outline-variant/30 bg-[#fef9f1]" id="faq">
+<div class="flex flex-col space-y-space-lg">
+<!-- Grid Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-start">
+<!-- Left Column: Editorial & Contextual Card + Audit CTA (Col 1-5) -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-space-md lg:sticky lg:top-28">
+<div class="space-y-space-sm">
+<!-- Eyebrow Tag -->
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 bg-[#a47b55] rotate-45 shrink-0 inline-block shadow-sm"></span>
+<span class="font-label-uppercase text-label-uppercase text-[#a47b55] uppercase tracking-[0.22em] font-semibold">
+              COMMON QUESTIONS
+            </span>
+</div>
+<!-- Dominant Headline -->
+<h2 class="font-headline-lg text-headline-lg lg:text-[48px] text-[#151311] leading-[1.05] tracking-tight">
+            Before We Build <span class="text-[#a47b55] italic font-headline-lg">Your System.</span>
+</h2>
+<!-- Supporting Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            A few things worth knowing before we look at your acquisition setup.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Clear expectations make better partnerships. Here’s how the engagement works.
+          </p>
+</div>
+<!-- Architectural Spec Card -->
+<div class="bg-surface-container-low p-space-sm sm:p-space-md border border-outline-variant/40 rounded-lg space-y-3 shadow-sm">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] text-[#a47b55] font-semibold uppercase flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#a47b55]"></span>
+              Advisory Protocol
+            </span>
+<span class="font-label-uppercase text-[9px] text-on-surface-variant tracking-wider uppercase">Standard Terms</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-[12px]">
+<div class="bg-surface-container p-2.5 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Launch Window</span>
+<span class="font-semibold text-[#151311] mt-0.5 block">Within 7 Days</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded border border-outline-variant/20">
+<span class="text-[10px] text-on-surface-variant block font-label-uppercase uppercase">Initial Scope</span>
+<span class="font-semibold text-[#151311] mt-0.5 block">3-Month Term</span>
+</div>
+</div>
+</div>
+<!-- Still Have Questions / Audit CTA Card -->
+<div class="bg-[#171411] text-[#fef9f1] p-space-sm sm:p-space-md rounded-lg border border-[#30231d] space-y-space-sm shadow-xl relative overflow-hidden">
+<div class="space-y-1 relative z-10">
+<span class="font-label-uppercase text-[10px] uppercase tracking-[0.2em] text-[#ffdcbf] font-semibold block">
+              STILL HAVE QUESTIONS?
+            </span>
+<h3 class="font-headline-sm text-[22px] text-white leading-tight font-serif">
+              Let's look at your current acquisition setup.
+            </h3>
+<p class="font-body-sm text-[13px] text-white/70 leading-relaxed pt-1">
+              Schedule an audit session to analyze ad spend efficiency, conversion choke points, and qualification logic.
+            </p>
+</div>
+<div class="pt-1 relative z-10">
+<button class="w-full inline-flex items-center justify-center gap-2 bg-[#4a2e24] hover:bg-[#a47b55] text-white px-6 py-3.5 font-label-uppercase text-label-uppercase tracking-[0.14em] uppercase transition-all duration-300 group shadow-md hover:shadow-lg border border-[#a47b55]/40" onclick="if(window.openAuditModal){openAuditModal()}else{console.log('openAuditModal');alert('Audit Request Initiated: Upvert Media Advisory Team will review your setup.')}" type="button">
+<span class="font-semibold">REQUEST A FREE AUDIT</span>
+<span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: 12 Accordion Rows (Col 6-12) -->
+<div class="lg:col-span-7 bg-surface-container-low border border-outline-variant/40 rounded-lg divide-y divide-outline-variant/30 shadow-sm overflow-hidden" id="faq-accordion-group">
+<!-- Accordion Item 01 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-1" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">01</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">How quickly can we launch?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-1">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Most setups can be launched within 7 days once we have the required property, brand and campaign information.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 02 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-2" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">02</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">How soon should we expect results?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-2">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Early signals can appear within the first few weeks, but meaningful performance evaluation usually takes 30–60 days. Stronger efficiency can take longer as campaigns collect data and improve.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 03 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-3" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">03</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">What does the monthly fee include?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-3">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              The management fee covers campaign management, the appointment-generation system, landing page setup, automation infrastructure and up to 5 ad creatives per month.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 04 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-4" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">04</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do I need to pay for advertising separately?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-4">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Yes. Your advertising budget is paid directly to the relevant advertising platforms. The management fee and ad spend are separate.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 05 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-5" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">05</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">What advertising budget should we start with?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-5">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              We generally recommend starting with at least AED 4,000 per month in advertising spend, depending on your market, property type and campaign objectives.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 06 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-6" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">06</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do you guarantee qualified leads?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-6">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Upvert offers a 20 Qualified Leads Guarantee subject to the agreed campaign scope, qualification criteria, advertising budget and applicable terms. If the agreed conditions are met and the guarantee is not achieved, a 50% management-fee refund may apply.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 07 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-7" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">07</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do you work with multiple real estate businesses in the same market?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-7">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              We limit direct competition within the same market so that campaign strategy, positioning and learnings remain focused.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 08 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-8" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">08</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do you provide the CRM?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-8">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Yes. CRM and lead-management infrastructure can be included as part of the system, depending on the engagement setup.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 09 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-9" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">09</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do you handle sales follow-up?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-9">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              We build the lead capture, qualification and automation infrastructure. Your sales team remains responsible for the actual sales conversation and closing process.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 10 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-10" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">10</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">What do you need from us to get started?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-10">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Usually your brand assets, property or listing information, target audience details, access to the required advertising accounts and any existing website or landing page assets.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 11 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-11" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">11</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Is there a minimum contract period?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-11">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Yes. The initial engagement is structured around a 3-month period so there is enough time to launch, collect data, optimise and evaluate performance.
+            </div>
+</div>
+</div>
+<!-- Accordion Item 12 -->
+<div class="faq-item transition-colors hover:bg-surface-container/60">
+<button aria-controls="faq-ans-12" aria-expanded="false" class="faq-toggle w-full px-4 sm:px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:bg-surface-container gap-4 transition-colors group" type="button">
+<div class="flex items-center gap-3 sm:gap-4">
+<span class="font-label-uppercase text-[11px] sm:text-[12px] text-[#a47b55] font-semibold tracking-widest shrink-0">12</span>
+<span class="font-headline-sm text-[18px] sm:text-[20px] text-[#151311] group-hover:text-[#4a2e24] transition-colors leading-snug">Do you work only with Dubai real estate businesses?</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface border border-outline-variant/40 flex items-center justify-center shrink-0 group-hover:border-[#a47b55] transition-colors">
+<span class="material-symbols-outlined faq-icon text-[#a47b55] text-[18px] transition-transform duration-300">add</span>
+</div>
+</button>
+<div class="faq-content hidden px-4 sm:px-6 pb-5 pt-1 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-ans-12">
+<div class="pl-7 sm:pl-8 border-l border-[#a47b55]/30">
+              Dubai is our initial focus. The system is designed specifically for real estate and can be adapted to other markets as the business expands.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+  // FAQ Accordion Vanilla JS Logic
+  (function() {
+    window.openAuditModal = function() {
+      alert('Audit Request Initiated: Upvert Media Advisory Team will review your setup.');
+    };
+
+    function initAccordion() {
+      const toggles = document.querySelectorAll('#faq-accordion-group .faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          const currentItem = this.closest('.faq-item');
+          const content = currentItem.querySelector('.faq-content');
+          const icon = this.querySelector('.faq-icon');
+
+          // Collapse all others (single-open accordion)
+          document.querySelectorAll('#faq-accordion-group .faq-item').forEach(item => {
+            if (item !== currentItem) {
+              const otherBtn = item.querySelector('.faq-toggle');
+              const otherContent = item.querySelector('.faq-content');
+              const otherIcon = item.querySelector('.faq-icon');
+              if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+              if (otherContent) otherContent.classList.add('hidden');
+              if (otherIcon) {
+                otherIcon.textContent = 'add';
+                otherIcon.classList.remove('rotate-45');
+              }
+            }
+          });
+
+          // Toggle current
+          if (isExpanded) {
+            this.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            if (icon) {
+              icon.textContent = 'add';
+              icon.classList.remove('rotate-45');
+            }
+          } else {
+            this.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            if (icon) {
+              icon.textContent = 'remove';
+            }
+          }
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAccordion);
+    } else {
+      initAccordion();
+    }
+  })();
+</script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-space-xl"><div class="md:col-span-5 flex flex-col justify-between space-y-space-sm"><div class="space-y-space-xs"><span class="font-label-uppercase text-label-uppercase text-on-surface tracking-[0.25em] font-semibold uppercase block">UPVERT MEDIA</span><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-space-sm">Bespoke capital deployment and architectural growth systems engineering for premier residential developments and luxury brokerages.</p></div><div class="flex items-center gap-2 pt-2"><span class="w-2 h-2 rounded-full bg-[#a47b55] inline-block"></span><span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest">Private Advisory Cohort Active</span></div></div><div class="md:col-span-2 space-y-space-xs"><span class="font-label-uppercase text-label-uppercase text-on-surface tracking-widest uppercase block mb-space-sm">Ecosystem</span><ul class="space-y-space-xs"><li class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors"><a class="" data-path="home" href="#">Overview</a></li><li class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors"><a class="" data-path="our-system" href="#our-system">Growth Methodology</a></li><li class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors"><a class="" data-path="results" href="#performance-section">Track Record</a></li><li class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors"><a class="" data-path="about" href="#">Monograph</a></li><li class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors"><a class="" data-path="faq" href="#faq">Common Questions (FAQ)</a></li></ul></div><div class="md:col-span-2 space-y-space-xs"><span class="font-label-uppercase text-label-uppercase text-on-surface tracking-widest uppercase block mb-space-sm">Offices</span><p class="font-body-sm text-body-sm text-on-surface-variant">Mayfair, London<br>Madison Ave, New York<br>Carré d'Or, Monaco</p></div><div class="md:col-span-3 space-y-space-xs"><span class="font-label-uppercase text-label-uppercase text-on-surface tracking-widest uppercase block mb-space-sm">Advisory Inquiries</span><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Direct capital consultation lines open to institutional sponsors and ultra-prime principals.</p><a class="inline-block font-label-uppercase text-label-uppercase text-[#4a2e24] hover:text-primary tracking-widest uppercase border-b border-[#4a2e24] hover:border-primary pb-0.5 transition-all" data-path="growth-plan" href="#contact-cta">Initiate Mandate →</a></div></div><div class="pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-label-uppercase text-[10px] tracking-wider text-on-surface-variant uppercase">© 2025 UPVERT MEDIA ADVISORY GROUP. ARCHITECTURAL PERFORMANCE SYSTEMS.</p><div class="flex items-center gap-space-md"><a class="font-label-uppercase text-[10px] tracking-wider text-on-surface-variant hover:text-on-surface uppercase" href="#">Privacy Protocol</a><a class="font-label-uppercase text-[10px] tracking-wider text-on-surface-variant hover:text-on-surface uppercase" href="#">Institutional Terms</a></div></div></div></footer>
+
+
+
+
+
+
+
+
+</body></html>
